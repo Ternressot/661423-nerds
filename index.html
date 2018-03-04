@@ -1,12 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Nёrds - главная</title>
+</head>
+<body>
+  <header class="main header">
+      <nav class="main navigation">
+      <a class="main header logo">
+        <img src="http://placehold.it/150x100">
+        </a>
+        <ul class="site navigation">
+          <li><a class="active" href="index.html">Студия</a></li>
+          <li><a href="references.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+  </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+<!-- CONTENT -->
+  <!-- SLIDER -->
+  <main>
+    <section class="slider">
+      <div class="container">
+          <!-- SLIDE 1 -->
+              <h3>Слайд 1</h3>
+              <p class="slide-title">Любите ли вы математику, как любим ее мы?</p>
+              <p class="slide-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+              <a href="#" class="btn slide-btn">Узнать больше</a>
+          <!-- SLIDE 2 -->
+              <h3>Слайд 2</h3>
+              <p class="slide-title">Только наркотики, только хардкор!</p>
+              <p class="slide-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a href="#" class="btn slide-btn">Узнать больше</a>
+          <!-- SLIDE 3 -->
+              <h3>Слайд 3</h3>
+              <p class="slide-title">Долго, дорого, скрупулезно.</p>
+              <p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="btn slide-btn">Узнать больше</a>
+    </section>
 
-  </body>
+    <!-- SERVICES -->
+
+    <div class="container">
+      <div class="row services">
+        <div class="col col1">
+          <div class="service">
+            <div class="img-wrapper"><img src="http://placehold.it/150x100" alt="Сайты"></div>
+            <h3 class="service-title">Веб-сайты</h3>
+            <p class="service-text">Мир никогда не будет прежним <span>после того как увидит ваш сайт!</span></p>
+            <a href="#" class="btn service-sites">Заказать</a>
+          </div>
+        </div>
+
+        <div class="col col1">
+          <div class="service">
+            <div class="img-wrapper"><img src="http://placehold.it/150x100" alt="Приложения"></div>
+            <h3 class="service-title">Приложения</h3>
+            <p class="service-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
+            <a href="#" class="btn service-apps">Заказать</a>
+          </div>
+        </div>
+
+        <div class="col col1">
+          <div class="service">
+            <div class="img-wrapper"><img src="http://placehold.it/150x100" alt="Презентации"></div>
+            <h3 class="service-title">Презентации</h3>
+            <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="btn service-presentations">Заказать</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <h2>Инфо</h2>
+      <div class="info">
+          <p class="info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="list-title">Выполняем заказы на разработку:</p>
+          <ul class="list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+
+          <div class="index-logo"></div>
+          <img src="http://placehold.it/150x100">
+          <p class="since-text">Since 2004</p>
+          <p class="list-title">Как мы работаем:</p>
+          <ul class="list">
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- REFERENCE-->
+      <div class="row references">
+        <a name="references"></a>
+          <a href="http://glukhanko.ru/" class="reference-img"><img src="http://placehold.it/150x100" alt="Glukhanko"> Glukhanko</a>
+        </div>
+
+        <div class="col col1">
+          <a href="http://htmlacademy.ru/" class="reference-img" target="_blank"><img src="http://placehold.it/150x100" alt="HTML Academy"> HTML Academy</a>
+        </div>
+
+        <div class="col col1">
+          <a href="http://barbershop-borodinski.ru" class="reference-img barbershop"><img src="http://placehold.it/150x100" alt="Barbershop Borodinski"> Barbershop Borodinski</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAP AND CONTACTS --><footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="social-icons">
+            <a class="icon-vk" href="https://vk.com/" >Vk</a>
+            <a class="icon-facebook" href="https://www.facebook.com/" >Fb</a>
+            <a class="icon-instagram" href="https://instagram.com/" >Insta</a>
+          </div>
+        </div>
+
+        <div class="col col2">
+          <p class="friendship-title">Давайте дружить, это выгодно!</p>
+          <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+<!-- FEEDBACK -->
+<!-- Здесь будет форма -->
+    </div>
+  </form>
+</body>
 </html>

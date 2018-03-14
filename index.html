@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Nёrds - главная</title>
+  <style>
+     @font-face {
+      font-family: Roboto;
+      src: url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic,cyrillic-ext");
+     }
+  </style>
 </head>
-
 <body>
   <header class="main header">
     <nav class="main navigation">
@@ -18,32 +23,42 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
+      <a class="icon-basket " href="#">Корзина</a>
     </nav>
   </header>
 
   <!-- CONTENT -->
   <!-- SLIDER -->
   <main>
-    <section class="slider">
-      <div class="container">
-        <!-- SLIDE 1 -->
-        <h3>Слайд 1</h3>
-        <p class="slide-title">Любите ли вы математику, как любим ее мы?</p>
-        <p class="slide-text">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
-        <!-- SLIDE 2 -->
-        <h3>Слайд 2</h3>
-        <p class="slide-title">Только наркотики, только хардкор!</p>
-        <p class="slide-text">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
-        <!-- SLIDE 3 -->
-        <h3>Слайд 3</h3>
-        <p class="slide-title">Долго, дорого, скрупулезно.</p>
-        <p class="slide-text">Математически выверенный дизайн
-          <br> для вашего сайта или мобильного приложения.</p>
-        <a href="#" class="btn slide-btn">Узнать больше</a>
-      </div>
-    </section>
+    <div class="slider-list">
+       <div class="slider-button">
+         <input class="button-link" type="radio" name="slider-btn" id="slider-1">
+         <input class="button-link" type="radio" name="slider-btn" id="slider-2">
+         <input class="button-link" type="radio" name="slider-btn" id="slider-3">
+         <div class="slider-btn">
+           <label for="slider-1"></label>
+           <label for="slider-2"></label>
+           <label for="slider-3"></label>
+         </div>
+       </div>
+       <ul class="slider">
+         <li class="slider-1">
+           <b class="tagline">Долго, дорого, скорпулезно</b>
+           <p class="text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+           <a class="link" href="#">Узнать больше</a>
+         </li>
+         <li class="slider-2">
+           <b class="tagline">Любим математикукак никто другой</b>
+           <p class="text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+           <a class="link" href="#">Узнать больше</a>
+         </li>
+         <li class="slider-3">
+           <b class="tagline">Только ночь, только хардкор</b>
+           <p class="text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+           <a class="link" href="#">Узнать больше</a>
+         </li>
+       </ul>
+     </div>
 
     <!-- SERVICES -->
 
@@ -57,6 +72,7 @@
             <a href="#" class="btn service-sites">Заказать</a>
           </div>
         </div>
+      </div>
 
         <div class="col col1">
           <div class="service">
@@ -90,34 +106,53 @@
         </ul>
       </div>
 
-      <div class="index-logo"></div>
+      <div class="index-logo">
       <img src="http://placehold.it/150x100" alt="index logo">
-      <p class="since-text">Since 2004</p>
-      <p class="list-title">Как мы работаем:</p>
-      <ul class="list">
-        <li>С самоотдачей 146%</li>
-        <li>Соблюдая сроки на 100%</li>
-        <li>По предоплате 50%</li>
-      </ul>
-    </div>
+      </div>
+      <aside class="statistics">
+             <b class="tagline">с 2004 года Любим точность во всем:</b>
+             <table class="main-table">
+               <tr class="table-list">
+                 <th class="table-item">146%</th>
+                 <th class="table-item">100%</th>
+                 <th class="table-item">50%</th>
+               </tr>
+               <tr class="table-list">
+                 <td class="table-item">Уровень самоотдачи</td>
+                 <td class="table-item">Соблюдение сроков</td>
+                 <td class="table-item">Минимальная предоплата</td>
+               </tr>
+             </table>
+      </aside>
 
     <!-- REFERENCE-->
-    <div class="row references">
-      <a name="references"></a>
-      <a href="http://glukhanko.ru/" class="reference-img"><img src="http://placehold.it/150x100" alt="Glukhanko"> Glukhanko</a>
-    </div>
-
-    <div class="col col1">
-      <a href="http://htmlacademy.ru/" class="reference-img" target="_blank"><img src="http://placehold.it/150x100" alt="HTML Academy"> HTML Academy</a>
-    </div>
-
-    <div class="col col1">
-      <a href="http://barbershop-borodinski.ru" class="reference-img barbershop"><img src="http://placehold.it/150x100" alt="Barbershop Borodinski"> Barbershop Borodinski</a>
-    </div>
+    <section class="references">
+         <ul class="logo-list">
+           <li class="logo-item">
+             <a class="logo-link" href="#"><img src="http://placehold.it/150x100" alt="Академия"></a>
+           </li>
+           <li class="logo-item">
+             <a class="logo-link" href="#"><img src="http://placehold.it/150x100" alt="Бородински"></a>
+           </li>
+           <li class="logo-item">
+             <a class="logo-link" href="#"><img src="http://placehold.it/150x100" alt="Пинк"></a>
+           </li>
+           <li class="logo-item">
+             <a class="logo-link" href="#"><img src="http://placehold.it/150x100" alt="Мишка"></a>
+           </li>
+         </ul>
+       </section>
   </main>
 
   <!-- MAP AND CONTACTS -->
   <footer>
+    <section class="modal modal-map">
+      <div class="footer-contacts">
+        <h2 class="head">NЁRDS DESIGN STUDIO</h2>
+        <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+        <a class="link" href="#">Напишите нам</a>
+      </div>
+    </section>
     <div class="container">
       <div class="row">
         <div class="col col1">
@@ -132,13 +167,25 @@
           <p class="friendship-title">Давайте дружить, это выгодно!</p>
           <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
         </div>
-
       </div>
     </div>
   </footer>
 
   <!-- FEEDBACK -->
-  <!-- Здесь будет форма -->
+  <section class="visually-hidden">
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <b class="tagline">Напишите нам</b>
+      <div class="important">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" autofocus>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" placeholder="email@example.com">
+      </div>
+      <label for="message-field">Текст письма:</label>
+      <textarea name="message" id="message-field" placeholder="В свободной форме"></textarea>
+      <button class="link" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+  </section>
 </body>
-
 </html>

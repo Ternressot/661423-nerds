@@ -2,262 +2,260 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Nёrds - магазин</title>
-  <style>
-    @font-face {
-      font-family: Roboto;
-      src: url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic,cyrillic-ext");
-    }
-  </style>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <header class="main header">
-    <nav class="main navigation">
-      <a class="main header logo">
-        <img src="http://placehold.it/150x100" alt="main logo">
-      </a>
-      <ul class="site navigation">
-        <li><a class="active" href="index.html">Студия</a></li>
-        <li><a href="references.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <a class="icon-basket " href="#">Корзина</a>
-    </nav>
-  </header>
-  <!-- CONTENT -->
-  <main>
-    <section class="welcome-block">
-      <div class="container">
-        <h1 class="shop-title">Магазин готовых шаблонов</h1>
-      </div>
-    </section>
+  <header class="main-header">
     <div class="container">
-      <div class=" row catalog">
-        <div class="col col1">
-          <aside class="sidebar">
-            <div class="filter-price">
-              <p class="filter-title">Стоимость:</p>
-
-              <div class="filter-slider">
-                <div class="range-control">
-                  <div class="scale">
-                    <div class="bar"></div>
+      <nav class="main-navigation" aria-label="Меню сайта">
+        <a class="logo">
+          <img src="img/nerds-logo.svg" alt="логотип">
+        </a>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="#">Студия</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Клиенты</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">Корзина</a>
+          </li>
+        </ul>
+        <div class="menu-item">
+          <a class="menu-link basket" href="#">Корзина</a>
+        </div>
+      </nav>
+      <h1 class="caption">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+  <main class="main-item">
+    <div class="container">
+      <div class="container-cataloge">
+        <aside class="fofm-lateral">
+          <div class="main-form">
+            <form action="" method="post" oninput="daysoutput.value=dayscount.value">
+              <div class="price">
+                <b class="tagline">Стоимость:</b>
+                <input type="range" min="0" max="15000" step="1">
+              </div>
+              <div class="price-list">
+                <div class="price-item">
+                  <output name="daysoutput"></output>
+                </div>
+                <div class="price-item">
+                  <output name="daysoutput"></output>
+                </div>
+              </div>
+              <div class="grid">
+                <b class="tagline">Сетка:</b>
+                <div class="grid-list">
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="adaptability">
+                    <label for="adaptability">Адаптивная</label>
                   </div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                </div>
-                <div class="price-control">
-                  от
-                  <input class="min-price" type="text" value="0"> до
-                  <input class="max-price" type="text" value="15 000">
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="fixity">
+                    <label for="fixity">Фиксированная</label>
+                  </div>
+                  <div class="grid-item">
+                    <input type="radio" name="grid" id="rubber">
+                    <label for="rubber">Резиновая</label>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <form action="#" id="filter-form">
-              <div class="filter-grid">
-                <p class="filter-title">Сетка:</p>
-                <p>
-                  <input type="radio" id="grid-1" name="radio-grid" checked="">
-                  <label class="icon-circle-dot" for="grid-1">Адаптивная</label>
-                </p>
-                <p>
-                  <input type="radio" id="grid-2" name="radio-grid">
-                  <label class="icon-circle" for="grid-2">Фиксированная</label>
-                </p>
-                <p>
-                  <input type="radio" id="grid-3" name="radio-grid">
-                  <label class="icon-circle" for="grid-3">Резиновая</label>
-                </p>
-              </div>
-
-              <div class="filters-special">
-                <p class="filter-title">Особенности:</p>
-
-                <p>
-                  <input type="checkbox" id="checkbox1" name="checkbox-1" checked="">
-                  <label class="icon-check-on" for="checkbox1">Слайдер</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="checkbox2" name="checkbox-2">
-                  <label class="icon-check-off" for="checkbox2">Блок преимуществ</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="checkbox3" name="checkbox-3" checked="">
-                  <label class="icon-check-on" for="checkbox3">Новости</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="checkbox4" name="checkbox-4">
-                  <label class="icon-check-off" for="checkbox4">Галерея</label>
-                </p>
-                <p>
-                  <input type="checkbox" id="checkbox5" name="checkbox-5">
-                  <label class="icon-check-off" for="checkbox5">Корзина</label>
-                </p>
+              <div class="capabilities">
+                <b class="tagline">Особенности:</b>
+                <div class="capabilities-item">
+                  <input type="checkbox" name="slider" id="slider-field" checked>
+                  <label for="slider-field">Слайдер</label>
+                </div>
+                <div class="capabilities-item">
+                  <input type="checkbox" name="advantages" id="advantages">
+                  <label for="advantages">Блок преимуществ</label>
+                </div>
+                <div class="capabilities-item">
+                  <input type="checkbox" name="news" id="news">
+                  <label for="news">Новости</label>
+                </div>
+                <div class="capabilities-item">
+                  <input type="checkbox" name="gallery" id="gallery">
+                  <label for="gallery">Галерея</label>
+                </div>
+                <div class="capabilities-item">
+                  <input type="checkbox" name="basket" id="basket">
+                  <label for="basket">Корзина</label>
+                </div>
+                <div class="button">
+                  <button class="link link-show" type="submit">Показать</button>
+                </div>
               </div>
             </form>
-          </aside>
-        </div>
-
-        <div class="col col2">
-          <div class="sorting">
-            <p class="sorting-title">Сортировать:</p>
-            <ul class="sorting-list">
-              <li><a href="#" class="sorting-text">По цене</a></li>
-              <li><a href="#" class="sorting-text">По типу</a></li>
-              <li><a href="#" class="sorting-text">По функционалу</a></li>
+          </div>
+        </aside>
+        <div class="container-item">
+          <div class="container-item-sorting">
+            <p class="text">Сортировать:</p>
+            <ul class="sorting">
+              <li class="sorting-list">
+                <a class="sorting-link" href="">По цене</a>
+              </li>
+              <li class="sorting-list">
+                <a class="sorting-link" href="">По типу</a>
+              </li>
+              <li class="sorting-list">
+                <a class="sorting-link" href="">По названию</a>
+              </li>
+              <li class="sorting-list">
+                <a class="sorting-link sorting-up" href="" aria-label="По возрастанию"></a>
+              </li>
+              <li class="sorting-list">
+                <a class="sorting-link sorting-down" href="" aria-label="По убыванию"></a>
+              </li>
             </ul>
-
-            <div class="sorting-controls">
-              <a href="#" class="icon-down-dir active"></a>
-              <a href="#" class="icon-up-dir"></a>
-            </div>
           </div>
-
-          <!-- Item cards -->
-          <div class="items">
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+          <ul class="services">
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Sunset</p>
-                  <p class="item-text">Интернет-магазин с личным кабинетом</p>
-                  <a href="#" class="btn item-price">10 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-sedona.jpg" alt="sedona">
                 </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <section class="information">
+                  <h2 class="head"><a href="">Sedona</a></h2>
+                  <p class="text">Информационный сайт для туристов</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Lorem</p>
-                  <p class="item-text">Lorem ipsum dolor sit amet</p>
-                  <a href="#" class="btn item-price">15 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-pink.jpg" alt="pink app">
                 </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <section class="information">
+                  <h2><a href="">Pink App</a></h2>
+                  <p class="text">Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Lorem</p>
-                  <p class="item-text">Lorem ipsum dolor sit amet</p>
-                  <a href="#" class="btn item-price">20 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-barbershop.jpg" alt="barbershop">
                 </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <section class="information">
+                  <h2 class="head"><a href="">Barbershop</a></h2>
+                  <p class="text">Сайт салоны красоты. Для мужчин, да.</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Lorem</p>
-                  <p class="item-text">Lorem ipsum dolor sit amet</p>
-                  <a href="#" class="btn item-price">25 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-mishka.jpg" alt="mishka">
                 </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <section class="information">
+                  <h2 class="head"><a href="">MISHKA</a></h2>
+                  <p class="text">Интернет-магазин вязаных игрушек</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Lorem</p>
-                  <p class="item-text">Lorem ipsum dolor sit amet</p>
-                  <a href="#" class="btn item-price">55 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-aplus.jpg" alt="aplus">
                 </div>
-              </div>
-            </div>
-
-            <div class="item-card">
-              <div class="item-img-wrapper">
-                <div class="item-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <section class="information">
+                  <h2 class="head"><a href="">A Plus</a></h2>
+                  <p class="text">Лендинг курсов повышения квалификации</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+            <li class="services-list">
+              <article class="services-item">
+                <div class="points">
                 </div>
-                <img src="http://placehold.it/150x100" alt="Sunset">
-                <div class="item-description">
-                  <p class="item-title">Lorem</p>
-                  <p class="item-text">Lorem ipsum dolor sit amet</p>
-                  <a href="#" class="btn item-price">100 000 р.</a>
+                <div class="picture">
+                  <img class="picture-list" src="img/img-kvast.jpg" alt="kvast">
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="pagination">
-            <p class="active">1</p>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a class="next" href="#">Следующая</a>
-          </div>
+                <section class="information">
+                  <h2 class="head"><a href="">КВАСТ</a></h2>
+                  <p class="text">Промо-сайт производителя крафтового кваса</p>
+                  <a class="link" href="#">9 900 руб.</a>
+                </section>
+              </article>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="pages-list">
+        <a class="pages-link one" href="">1</a>
+        <a class="pages-link" href="">2</a>
+        <a class="pages-link" href="">3</a>
+        <a class="pages-link" href="">Следующая</a>
       </div>
     </div>
-  </main>
-
-  <!-- MAP AND CONTACTS -->
-  <!-- Сюда позже вставить Яндекс Карты -->
-  <div class="contacts">
-    <p class="contacts-title"><span>Nёrds</span> design studio</p>
-    <p class="contacts-address">350000, Краснодар, ул. Головатого, 100</p>
-    <p class="contacts-phone">тел. +7 (861) 275-75-75</p>
-    <a href="#" class="btn contacts-btn">Напишите нам</a>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col col1">
-          <div class="social-icons">
-            <a class="icon-vk" href="https://vk.com/">Vk</a>
-            <a class="icon-facebook" href="https://www.facebook.com/">Fb</a>
-            <a class="icon-instagram" href="https://instagram.com/">Insta</a>
-          </div>
-        </div>
-        <div class="col col2">
-          <p class="friendship-title">Давайте дружить, это выгодно!</p>
-          <p class="friendship-text">Скидка 10% для друзей из социальных сетей</p>
-        </div>
+    <section class="modal modal-map">
+      <div class="modal-contacts">
+        <h2 class="head">NЁRDS DESIGN STUDIO</h2>
+        <p class="text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+        <a class="link" href="#">Напишите нам</a>
       </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <b class="tagline benefit">Давайте дружить, это выгодно!</b>
+      <p class="text">Скидка 10% для друзей из социальных сетей.</p>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social social-vk" href="#" aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social-item">
+          <a class="social social-fb" href="#" aria-label="Мы на Фейсбуке"></a>
+        </li>
+        <li class="social-item">
+          <a class="social social-in" href="#" aria-label="Мы в инстаграм"></a>
+        </li>
+      </ul>
     </div>
   </footer>
-
-  <!-- FEEDBACK -->
-  <!-- Здесь будет форма -->
+  <section class="visually-hidden">
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+      <b class="tagline">Напишите нам</b>
+      <div class="important">
+        <label class="visually-hidden" for="name-field">Ваше имя:</label>
+        <input class="name-user" type="text" name="name" id="name-field" placeholder="Имя,Фамилия" autofocus>
+        <label class="visually-hidden" for="email-field">Ваш e-mail:</label>
+        <input class="name-email" type="text" name="email" id="email-field" placeholder="email@example.com">
+      </div>
+      <label class="visually-hidden" for="message-field">Текст письма:</label>
+      <textarea class="name-text" name="message" id="message-field" placeholder="В свободной форме"></textarea>
+      <button class="link" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+  </section>
 </body>
 
 </html>
